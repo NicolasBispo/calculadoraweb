@@ -1,0 +1,120 @@
+body{
+    background-color: #FFAAAA;
+    /* reset css */
+    margin: 0;
+    padding: 0;
+}
+.container-calculadora{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.corpo-calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 75vh;
+    background-color: dimgray;
+    border-radius: 15px;
+    border: solid 3px rgb(32, 65, 32);
+    align-items: center;
+    padding: 1rem;
+    flex-grow: 0 1;
+}
+.tela-calculadora{
+    width: 29vw;
+    background-color: rgb(191, 226, 228);
+    height: 16vh;
+    border-radius: 3px;
+    border: solid 3px rgb(32, 65, 32);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    flex-grow: 0 1;
+}
+.visor{
+    grid-row: 1;
+    font-size: 2rem;
+    justify-content: flex-end;
+    text-align: end;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.3rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.visor-resultado{
+    text-align: end;
+    box-sizing: border-box;
+    padding: 0.3rem;
+    width: 100%;
+    font-size: 1rem;
+}
+.coluna1-calculadora, .coluna2-calculadora, .coluna3-calculadora{
+    margin-top: 2vh;
+}
+.coluna1-calculadora section, .coluna2-calculadora, .coluna3-calculadora{
+    justify-content: center;
+}
+#linha1-calc{
+    margin-bottom: 2vh;
+}
+#linha2-calc{
+    margin-bottom: 2vh;
+}
+#linha3-calc{
+    margin-bottom: 2vh;
+}
+.botoes-calculadora{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+.linha{
+    display: flex;
+    align-items: center;
+}
+.botao-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    height: 5vw;
+    font-family: Impact;
+    font-size: 2rem;
+    text-align: center;
+    border: solid 3px rgb(32, 65, 32);
+    background-color: azure;
+    transition: all 0.2s ease-in-out;
+    margin: 0 0.3rem 0 0;
+    border-radius: 10%;
+}
+.ultimoBtn{
+    margin-right: 0;
+}
+.botao-numero:hover,  .botao-funcao:hover{
+    background-color: aqua;
+}
+.botao-funcao{
+    width: 5vw;
+    height: 5vw;    
+    border: solid 3px rgb(32, 65, 32);
+    font-family: Impact;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2vh;
+    background-color: azure;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10%;
+}
+.resultado-operacao{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ligar{
+    background-color: #ec3f3f;
+    transition: background-color 0.2s ease-in-out;
+}
+.ligar:hover{
+    background-color: #CC0000;
+}
